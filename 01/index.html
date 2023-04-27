@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScript Introduccion</h1>
+    <section>
+      <h2>JavaScript puede cambiar el contenido de HTML</h2>
+      <p>
+        El siguiente ejemplo "busca" unlemeneto HTML (con el id="demo") y cambia
+        el cntenido (usando el metodo "innerHTML") por "Hola JavaScript"
+      </p>
+      <div>
+        <h3>Ejemplo del codigo JS:</h3>
+        <p>document.getElementById("demo").innerHTML = "Hello JavaScript";</p>
+        <h3>Ejmplo de lo que hace el codigo</h3>
+        <p id="demo">Este texto va a cambiar cuando se presione el boton</p>
+        <button id="boton" onclick="cambio()">Click</button>
+      </div>
+    </section>
+
+    <br />
+
+    <section>
+      <h2>JavaScript puede cambiar valores de los atributos de HTML</h2>
+      <p>
+        En este caso JavaScript cambia el valor src (source [recurso]) del
+        ATRIBUTO de una imagen
+      </p>
+      <div>
+        <button id="encendido" onclick="encendido()">Encendido</button>
+        <img
+          id="imgFoco"
+          src="/01/src/pic_bulboff.gif"
+          alt="imagen gif de un foco"
+        />
+        <button id="apagado" onclick="apagado()">Apagaado</button>
+      </div>
+    </section>
+
+    <br />
+
+    <section>
+      <h2>JavaScript tambein puede cambiar los estilos de un css</h2>
+      <div>
+        <p id="textoCssCambio">
+          Este texto cambiara cuando se presione el boton
+        </p>
+        <button id="cambioPX" onclick="cambioCss()">Color AZUL</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>JavaScript puede esconder y mostrar elementos.</h2>
+      <div>
+        <button onclick="esconder()">Esconder</button>
+        <p id="textPrueba">Este texto es para que se esconda o se muestre.</p>
+        <button onclick="mostrar()">Mostrar</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>Para ver el codigo de JavaScript, dirijase al archivo 01.js</p>
+    </footer>
+  </body>
+  <script src="/01/01.js"></script>
+</html>
