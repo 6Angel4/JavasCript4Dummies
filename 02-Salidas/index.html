@@ -4,9 +4,67 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
     <h1>JavaScript - Salidas (Outputs)</h1>
+
+    <section>
+      <h2>Escribir dentro de HTML se utiliza (innerHTML)</h2>
+      <p>
+        Para acceder a un elemento de HTML, podemos usar con JavaScript el
+        metodo getElementById()
+      </p>
+      <br />
+      <p id="textoPrueba">Esto no va a salir en el HTML</p>
+    </section>
+
+    <section>
+      <h2>Escribir directamente en el archivo HTML</h2>
+      <p>Para escribir algo en el archivo HTML se usa el metodo (write())</p>
+    </section>
+
+    <section>
+      <h2>Podemos tambien generar pop-ups para mostrar informacion</h2>
+      <p>Para generar un pop-up se hace de la siguiente manera:</p>
+      <p>window.alert()</p>
+      <button onclick="alerta1()">mostrar pop-up</button>
+      <p>
+        Podemos taambien brincarnos la parte de generar una ventana, solo
+        colocando lo siguiente:
+      </p>
+      <p>alert()</p>
+      <button onclick="alerta2()">mostrar pop-up</button>
+    </section>
+
+    <section>
+      <h2>Usando console.log()</h2>
+      <p>
+        Esta opcion es mas para cuando se quiere comprobar algo o ver si se esta
+        efectuando algo.
+      </p>
+      <br />
+      <p>
+        Para ver la consola se deve de acceder al modo de inspeccion de la
+        pagina y dirigirse a 'consola' ahi se podra ver un mensaje que se dejo.
+      </p>
+    </section>
+
+    <section>
+      <h2>Imprir la pagina</h2>
+      <p>
+        Para Imprir la pagina como si pulsaras ctrl+p se hace de la siguiente
+        manera:
+      </p>
+      <p>window.print()</p>
+      <button onclick="window.print()">Imprimir</button>
+    </section>
+
+    <footer>
+      <p>Para ver el codigo de JavaScript se abre el archivo 02.js</p>
+    </footer>
+
+    <script src="/02-Salidas/02.js"></script>
   </body>
 </html>
